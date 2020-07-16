@@ -18,6 +18,15 @@ func main() {
 		}
 		f := tempconv.Fahrenheit(t)
 		c := tempconv.Celsius(t)
+		k := tempconv.Kelvin(t)
 		fmt.Printf("%s = %s, %s = %s\n", f, tempconv.FToC(f), c, tempconv.CToF(c))
+		fmt.Printf("A difference of 1K has the same magantude as 1C: %s = %s\n", k, tempconv.KToC(k))
 	}
 }
+
+// Feet and meters and pounds and kilo
+// Feet to Meters = divide the length value by 3.281
+// Meters to Feet = multiply the length value by 3.281
+
+// Pound to Kilo = divide the mass value by 2.205
+// Kilo to Pound = multiply the mass value by 2.205
