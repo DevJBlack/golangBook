@@ -1,4 +1,4 @@
-// Package tempconv performs Celsius and Fahrenheit conversions.
+// Package tempconv performs converstions for multiple of examples
 package tempconv
 
 import "fmt"
@@ -17,6 +17,30 @@ const (
 	BoilingC      Celsius = 100
 )
 
-func (c Celsius) String() string    { return fmt.Sprintf("%g°C", c) }
-func (f Fahrenheit) String() string { return fmt.Sprintf("%g°F", f) }
-func (k Kelvin) String() string     { return fmt.Sprintf("%g°K", k) }
+func (c Celsius) String() string {
+	return fmt.Sprintf("%.3f°C", c)
+}
+
+func (f Fahrenheit) String() string {
+	return fmt.Sprintf("%g°F", f)
+}
+
+func (k Kelvin) String() string {
+	return fmt.Sprintf("%g°K", k)
+}
+
+func (fe Feet) String() string {
+	return fmt.Sprintf("%.2f", fe)
+}
+
+func (m Meter) String() string {
+	return fmt.Sprintf("%.4f", m)
+}
+
+func (p Pound) String() string {
+	return fmt.Sprintf("%.2f", p)
+}
+
+func (kilo Kilo) String() string {
+	return fmt.Sprintf("%.3f", kilo)
+}
