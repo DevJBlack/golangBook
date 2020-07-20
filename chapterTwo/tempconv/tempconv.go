@@ -15,6 +15,7 @@ const (
 	AbsoluteZeroC Celsius = -273.15
 	FreezingC     Celsius = 0
 	BoilingC      Celsius = 100
+	MaxLoadP      Pound   = 1000
 )
 
 func (c Celsius) String() string {
